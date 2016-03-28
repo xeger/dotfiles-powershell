@@ -11,6 +11,7 @@ function docker-compose-build {
   docker-compose up -d $args[0]
 }
 
+function dcl { cls ; docker-compose logs $args }
 function dck { docker-compose-kill $args }
 function dcb { docker-compose-build $args }
 
